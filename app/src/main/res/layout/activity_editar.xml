@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityEditar">
+
+    <!--image view for contact-->
+    <ImageView
+        android:id="@+id/idIVContact"
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
+        android:background="@color/teal_700"
+        android:padding="50dp"
+        android:src="@drawable/ic_account"
+        app:tint="@color/white" />
+
+    <!--text view for displaying user name-->
+    <TextView
+        android:id="@+id/idTVName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVContact"
+        android:background="@color/teal_700"
+        android:padding="8dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!--cardview for displaying user contact-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVName"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+            <!--image view for making a call -->
+            <!--text view for displaying user contact-->
+
+            <!--image view for displaying message icon-->
+
+            <TextView
+                android:id="@+id/idTVPhone"
+                android:layout_width="442dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginBottom="26dp"
+                android:layout_toEndOf="@+id/imageButton" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="60dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/ic_call"
+                android:backgroundTint="@color/white"
+                android:onClick="onClickLlamada"
+                android:scaleType="fitCenter"
+                android:tint="@color/purple_700"
+                app:srcCompat="@drawable/ic_call" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

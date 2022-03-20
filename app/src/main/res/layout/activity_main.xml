@@ -19,11 +19,44 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnGaleria"
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/picture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309"
+        app:srcCompat="@drawable/galeria" />
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="93dp"
+        android:layout_height="27dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nombre"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:layout_constraintVertical_bias="0.369" />
+
 
     <EditText
         android:id="@+id/txtlongitud"
@@ -32,17 +65,17 @@
         android:ems="10"
         android:fontFamily="sans-serif-condensed-light"
         android:gravity="start|top"
-        android:inputType="textMultiLine"
+        android:inputType="textPersonName"
         android:textColorHighlight="@color/purple_500"
         android:textColorHint="@color/purple_500"
         android:textColorLink="@color/purple_500"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
@@ -55,10 +88,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintTop_toBottomOf="@+id/txtLatitud"
+        app:layout_constraintVertical_bias="0.038" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -66,22 +99,24 @@
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/uth" />
 
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="match_parent"
-        android:layout_height="184dp"
+        android:layout_width="203dp"
+        android:layout_height="213dp"
         android:layout_gravity="center"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="104dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/usuario" />
 
     <EditText
         android:id="@+id/txtLatitud"
@@ -90,17 +125,17 @@
         android:ems="10"
         android:fontFamily="sans-serif-condensed-light"
         android:gravity="start|top"
-        android:inputType="textMultiLine"
+        android:inputType="textPersonName"
         android:textColorHighlight="@color/purple_500"
         android:textColorHint="@color/purple_500"
         android:textColorLink="@color/purple_500"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
@@ -113,16 +148,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefono"
+        app:layout_constraintVertical_bias="0.03" />
 
     <EditText
         android:id="@+id/txtTelefono"
         android:layout_width="359dp"
         android:layout_height="42dp"
-        android:layout_marginTop="392dp"
         android:ems="10"
         android:fontFamily="sans-serif-condensed-light"
         android:inputType="number"
@@ -131,43 +165,25 @@
         android:textColorLink="@color/purple_500"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="93dp"
-        android:layout_height="27dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Nombre"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
-
-
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="93dp"
         android:layout_height="28dp"
-        android:layout_marginTop="4dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Telefono"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.516" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        app:layout_constraintVertical_bias="0.034" />
 
     <Button
         android:id="@+id/btnSalvar"
@@ -191,6 +207,7 @@
         android:id="@+id/btnContactos"
         android:layout_width="250dp"
         android:layout_height="45dp"
+        android:onClick="clickNew"
         android:text="Contactos Salvados"
         android:textAllCaps="false"
         app:backgroundTint="@color/purple_500"
@@ -201,42 +218,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.943" />
 
-    <TextView
-        android:id="@+id/txtPais"
-        android:layout_width="0dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="87dp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toStartOf="@+id/picture"
-        app:layout_constraintHorizontal_bias="0.245"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/bfoto"
         android:layout_width="52dp"
         android:layout_height="49dp"
-        android:layout_marginEnd="256dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/picture"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346"
+        app:layout_constraintVertical_bias="0.068"
         app:srcCompat="@drawable/camara" />
 
-    <ImageButton
-        android:id="@+id/bimagaleria"
-        android:layout_width="52dp"
-        android:layout_height="49dp"
-        android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/Tv"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346"
-        app:srcCompat="@drawable/galeria"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="259dp" />
+        tools:layout_editor_absoluteX="74dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
